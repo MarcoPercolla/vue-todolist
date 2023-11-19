@@ -10,7 +10,7 @@ const tasks = {
                 },
                 {
                     text: "pulire la stanza",
-                    done: false,
+                    done: true,
                 },
                 {
                     text: "andare in palestra",

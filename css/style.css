@@ -9,3 +9,7 @@ body {
     color: white;
     font-family: sans-serif;
 }
+
+.fatto {
+    text-decoration: line-through;
+}
