@@ -43,7 +43,17 @@ const tasks = {
             };
             this.toDolist.push(newTask);
             this.newTask = "";
-        }
+        },
+        changeStatus(i) {
+            console.log(this.toDolist[i].done);
+            if (this.toDolist[i].done) {
+                this.toDolist[i].done = false;
+            } else {
+                this.toDolist[i].done = true;
+            }
+              
+        },
+        
 
     },
     mounted() {
