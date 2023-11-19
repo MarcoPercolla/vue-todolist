@@ -61,6 +61,13 @@ const tasks = {
             });
             
         },
+        showDone() {
+            let nascosti = document.querySelectorAll(".nascosto");
+            console.log(nascosti);
+            nascosti.forEach(element => {
+                element.classList.remove("nascosto");
+            });
+        }
 
     },
     mounted() {
