@@ -13,3 +13,7 @@ body {
 .fatto {
     text-decoration: line-through;
 }
+
+.nascosto{
+    display:none;
+}

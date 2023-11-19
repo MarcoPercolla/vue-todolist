@@ -53,7 +53,14 @@ const tasks = {
             }
               
         },
-        
+        removeDone() {
+            let fatti = document.querySelectorAll(".fatto");
+            console.log(fatti);
+            fatti.forEach(element => {
+                element.classList.add("nascosto")
+            });
+            
+        },
 
     },
     mounted() {

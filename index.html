@@ -13,6 +13,7 @@
             <li v-for="(task, i) in toDolist" :key="i" :class="{fatto: (task.done == true)}"> {{task.text}} <button @click="changeStatus(i)">x</button></li>
             <input type="text" v-model="newTask" >
             <button @click="addTask">Aggiungi</button>
+            <button @click="removeDone">Rimuovi il fatto</button>
 
         </ul>
         
