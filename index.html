@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
     <div id="app">
+        <h1>ToDoList.MP</h1>
         <ul>
-            <li v-for="(task, i) in toDolist" :key="i" :class="{fatto: (task.done == true)}"> {{task.text}} <button @click="changeStatus(i)">x</button></li>
-            <input type="text" v-model="newTask" >
+            <li v-for="(task, i) in toDolist" :key="i" :class="{fatto: (task.done)}"> {{task.text}} <button @click="changeStatus(i)">x</button></li>
+
+        </ul>
+        <div class="buttons">
+
+            <div class="addFunction">
+            <input type="text" v-model="newTask">
             <button @click="addTask">Aggiungi task</button>
+            </div>
             <button @click="removeDone">Rimuovi task svolti</button>
             <button @click="showDone">mostra task svolti</button>
 
-        </ul>
-        
+        </div>
+
     </div>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
