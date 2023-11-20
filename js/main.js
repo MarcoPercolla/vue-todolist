@@ -57,6 +57,10 @@ const tasks = {
             }
               
         },
+        eraseTask(i) {
+            this.toDolist.splice(i,1);
+            
+        },
         removeDone() {
             let fatti = document.querySelectorAll(".fatto");
             console.log(fatti);
